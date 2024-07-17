@@ -28,39 +28,19 @@ pip install -r requirements.txt
 
 ## 📋 Uso
 
-### 1. Testar e Salvar Proxies
-Execute o script para testar os proxies e salvar os funcionais em um arquivo.
-```python
-import asyncio
-from proxy_tester import test_all_proxies
 
-asyncio.run(test_all_proxies())
-```
-
-### 2. Carregar Proxies e Inicializar WebDriver
-Carregue os proxies funcionais e inicialize o Selenium WebDriver com um dos proxies.
-```python
-from webdriver_handler import WebDriverHandler
-
-handler = WebDriverHandler()
-handler.login("https://app.hugme.com.br/", "usuario", "senha")
-```
-
-### 3. Exemplo Completo
+### 1. Exemplo Completo
 Aqui está um exemplo completo que testa proxies, salva os funcionais e utiliza Selenium WebDriver para login:
 ```python
 import asyncio
 import logging
 from webdriver_handler import WebDriverHandler
-from proxy_tester import test_all_proxies
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 async def main():
-    # Testar proxies e salvar os funcionais
-    await test_all_proxies()
 
     # Inicializar WebDriver e realizar login
     handler = WebDriverHandler()
