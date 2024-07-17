@@ -23,7 +23,7 @@ Bem-vindo ao repositório de Teste de Proxy e Gerenciador de WebDriver! Este pro
 
 ### Instalar Dependências
 ```bash
-pip install selenium aiohttp requests
+pip install -r requirements.txt
 ```
 
 ## 📋 Uso
